@@ -48,11 +48,11 @@ public class StudentsGroup extends HelperClass{
         for (int i = 0; i < studentsList.size(); i++) {
             if(studentsList.get(i).getAcademicPerformance() == getMaxIntValueFromArray(academicPerformanceList)){
                 classMonitor = studentsList.get(i);
-                System.out.println("Class monitor student");
-                System.out.println(studentsList.get(i).getFirstName() + " " + studentsList.get(i).getLastName());
             }
 
         }
+                System.out.println("Class monitor student");
+                System.out.println(classMonitor.getFirstName() + " " + classMonitor.getLastName());
         return classMonitor;
     }
 
